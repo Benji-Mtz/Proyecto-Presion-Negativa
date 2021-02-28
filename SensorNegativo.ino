@@ -115,12 +115,13 @@ void loop()
       else 
       { 
         solenoideScreen();
-        
+
         if (mmHG >= 0)
         {
           digitalWrite(releBomba, LOW);
           digitalWrite(releSolenoide, LOW);
 
+          pressure_opc = 0;
           estado_solenoide = false;
         }
         
